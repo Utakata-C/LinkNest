@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs';
 import catalog from '../src/data/catalog.json';
 import { decodeHash, matchesQuery, resolveLocale } from '../src/lib';
 
-describe('catalog migration', () => {
+describe('catalog', () => {
   it('preserves all 76 entries and 18 categories with complete translations', () => {
     expect(catalog.links).toHaveLength(76);
     expect(catalog.categories).toHaveLength(18);
@@ -19,8 +19,7 @@ describe('catalog migration', () => {
       expect(site.description.en).not.toMatch(/[\u4e00-\u9fff]/);
     }
   });
-  it('retains the old cloud anchor as an alias', () => {
-    expect(catalog.categories.find(category => category.id === 'cloud')?.legacyAnchor).toBe('界面灵感');
+  it('decodes category anchors and handles malformed hashes', () => {
     expect(decodeHash('#%E4%B8%AA%E4%BA%BA%E4%BA%91')).toBe('个人云');
     expect(decodeHash('#%bad')).toBe('');
   });

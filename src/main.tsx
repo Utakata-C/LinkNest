@@ -5,7 +5,3 @@ import './styles.css';
 import App from './App';
 
 createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>);
-
-// Legacy integrations stay outside React so StrictMode cannot initialize twice.
-import { loadLegacyIntegrations } from './legacy-integrations';
-loadLegacyIntegrations();

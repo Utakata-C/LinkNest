@@ -7,7 +7,6 @@
         "en": "Search engines"
       },
       "anchor": "搜索引擎",
-      "legacyAnchor": "搜索引擎",
       "group": "daily"
     },
     {
@@ -17,7 +16,6 @@
         "en": "Personal cloud"
       },
       "anchor": "个人云",
-      "legacyAnchor": "界面灵感",
       "group": "daily"
     },
     {
@@ -27,7 +25,6 @@
         "en": "Community & news"
       },
       "anchor": "社区资讯",
-      "legacyAnchor": "社区资讯",
       "group": "daily"
     },
     {
@@ -37,7 +34,6 @@
         "en": "Online video"
       },
       "anchor": "在线视频",
-      "legacyAnchor": "在线视频",
       "group": "entertainment"
     },
     {
@@ -47,7 +43,6 @@
         "en": "Gaming"
       },
       "anchor": "游戏娱乐",
-      "legacyAnchor": "游戏娱乐",
       "group": "entertainment"
     },
     {
@@ -57,7 +52,6 @@
         "en": "Downloads"
       },
       "anchor": "下载站点",
-      "legacyAnchor": "下载站点",
       "group": "entertainment"
     },
     {
@@ -67,7 +61,6 @@
         "en": "Online tools"
       },
       "anchor": "在线工具",
-      "legacyAnchor": "在线工具",
       "group": "tools"
     },
     {
@@ -77,7 +70,6 @@
         "en": "Chrome extensions"
       },
       "anchor": "Chrome插件",
-      "legacyAnchor": "Chrome插件",
       "group": "tools"
     },
     {
@@ -87,7 +79,6 @@
         "en": "Web services"
       },
       "anchor": "Web服务",
-      "legacyAnchor": "Web服务",
       "group": "it"
     },
     {
@@ -97,7 +88,6 @@
         "en": "Web tools"
       },
       "anchor": "Web工具",
-      "legacyAnchor": "Web工具",
       "group": "it"
     },
     {
@@ -107,7 +97,6 @@
         "en": "Utilities"
       },
       "anchor": "常用工具",
-      "legacyAnchor": "常用工具",
       "group": "it"
     },
     {
@@ -117,7 +106,6 @@
         "en": "Software mirrors"
       },
       "anchor": "镜像源",
-      "legacyAnchor": "镜像源",
       "group": "it"
     },
     {
@@ -127,7 +115,6 @@
         "en": "Forums"
       },
       "anchor": "交流论坛",
-      "legacyAnchor": "交流论坛",
       "group": "it"
     },
     {
@@ -137,7 +124,6 @@
         "en": "Graphics"
       },
       "anchor": "平面素材",
-      "legacyAnchor": "平面素材",
       "group": "design"
     },
     {
@@ -147,7 +133,6 @@
         "en": "Fonts"
       },
       "anchor": "字体资源",
-      "legacyAnchor": "字体资源",
       "group": "design"
     },
     {
@@ -157,7 +142,6 @@
         "en": "Photography"
       },
       "anchor": "摄影图库",
-      "legacyAnchor": "摄影图库",
       "group": "design"
     },
     {
@@ -167,7 +151,6 @@
         "en": "Presentations"
       },
       "anchor": "PPT资源",
-      "legacyAnchor": "PPT资源",
       "group": "design"
     },
     {
@@ -177,7 +160,6 @@
         "en": "Learning"
       },
       "anchor": "学习交流",
-      "legacyAnchor": "学习交流",
       "group": "design"
     }
   ],

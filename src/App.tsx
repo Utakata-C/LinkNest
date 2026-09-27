@@ -19,7 +19,7 @@ const categoryIcons = [MagnifyingGlass, Cloud, Globe, FilmSlate, GameController,
 const getCategory = () => {
   const hash = decodeHash(location.hash);
   if (['favorites', 'about'].includes(hash)) return hash;
-  return categories.find(item => item.anchor === hash || item.legacyAnchor === hash || item.id === hash)?.id ?? 'all';
+  return categories.find(item => item.anchor === hash)?.id ?? 'all';
 };
 const enumValue = <T extends string>(values: readonly T[]) => (value: unknown): value is T => typeof value === 'string' && values.includes(value as T);
 const arrayValue = (value: unknown): value is string[] => Array.isArray(value) && value.every(id => typeof id === 'string' && sites.some(site => site.id === id));
