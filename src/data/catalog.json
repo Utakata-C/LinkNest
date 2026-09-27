@@ -224,7 +224,7 @@
       "id": "4db613b2b781",
       "category": "cloud",
       "url": "https://nas.tangsu.house:1201/",
-      "icon": "assets/images/logos/synology.png",
+      "icon": "assets/images/logos/synology-dsm.png",
       "name": {
         "zh": "糖酥Cloud",
         "en": "Tangsu Cloud"
@@ -238,7 +238,7 @@
       "id": "5752f37719bb",
       "category": "cloud",
       "url": "https://tfdl.quickconnect.cn/",
-      "icon": "assets/images/logos/synology.png",
+      "icon": "assets/images/logos/synology-dsm.png",
       "name": {
         "zh": "凯能Server",
         "en": "Kaineng Server"
@@ -252,7 +252,7 @@
       "id": "3418503d80a8",
       "category": "cloud",
       "url": "https://nas.tangsu.house:1301/",
-      "icon": "assets/images/logos/synologyphotos.png",
+      "icon": "assets/images/logos/synology-photos.png",
       "name": {
         "zh": "Synology Photos",
         "en": "Synology Photos"
@@ -266,7 +266,7 @@
       "id": "9f5bbb349e1e",
       "category": "cloud",
       "url": "https://nas.tangsu.house:1401/",
-      "icon": "assets/images/logos/activebackupforbusiness.png",
+      "icon": "assets/images/logos/synology-active-backup.png",
       "name": {
         "zh": "Active Backup for Business",
         "en": "Active Backup for Business"
@@ -280,7 +280,7 @@
       "id": "bcc4dd1b9a1a",
       "category": "cloud",
       "url": "https://nas.tangsu.house:6002/",
-      "icon": "assets/images/logos/halo.png",
+      "icon": "assets/images/logos/tangsu-blog.png",
       "name": {
         "zh": "糖酥的碎碎念",
         "en": "Tangsu's Blog"
@@ -308,7 +308,7 @@
       "id": "52d488c4abfa",
       "category": "cloud",
       "url": "https://nas.tangsu.house:6008/",
-      "icon": "assets/images/logos/calibreweb.png",
+      "icon": "assets/images/logos/calibre-web.png",
       "name": {
         "zh": "CalibreWeb",
         "en": "CalibreWeb"
@@ -490,7 +490,7 @@
       "id": "d2a4bf6a3aa1",
       "category": "downloads",
       "url": "https://u2.dmhy.org/",
-      "icon": "assets/images/logos/u2.png",
+      "icon": "assets/images/logos/dmhy-u2.png",
       "name": {
         "zh": "动漫花园",
         "en": "DMHY"
@@ -602,7 +602,7 @@
       "id": "cb86ddc75ca4",
       "category": "online-tools",
       "url": "https://www.iloveimg.com/zh-cn",
-      "icon": "assets/images/logos/iliveimg.png",
+      "icon": "assets/images/logos/iloveimg.png",
       "name": {
         "zh": "iLiveIMG",
         "en": "iLoveIMG"
@@ -644,7 +644,7 @@
       "id": "1798a8c642be",
       "category": "web-services",
       "url": "https://fanqiev2.work/auth/register?code=vepj",
-      "icon": "assets/images/logos/fanqiev2.png",
+      "icon": "assets/images/logos/fanqie-v2.png",
       "name": {
         "zh": "番茄V2",
         "en": "Fanqie V2"
@@ -686,7 +686,7 @@
       "id": "2ffe215be8f1",
       "category": "mirrors",
       "url": "https://mirrors.tuna.tsinghua.edu.cn/",
-      "icon": "assets/images/logos/tsinghua.png",
+      "icon": "assets/images/logos/tsinghua-mirrors.png",
       "name": {
         "zh": "清华大学开源软件镜像站",
         "en": "Tsinghua Mirrors"
@@ -700,7 +700,7 @@
       "id": "6dbd47e32b34",
       "category": "mirrors",
       "url": "https://developer.aliyun.com/mirror/",
-      "icon": "assets/images/logos/aliyun.png",
+      "icon": "assets/images/logos/aliyun-mirrors.png",
       "name": {
         "zh": "阿里云开源软件镜像站",
         "en": "Aliyun Mirrors"
@@ -714,7 +714,7 @@
       "id": "adbe249aa612",
       "category": "mirrors",
       "url": "https://mirrors.163.com/",
-      "icon": "assets/images/logos/wangyi.png",
+      "icon": "assets/images/logos/netease-mirrors.png",
       "name": {
         "zh": "网易开源镜像站",
         "en": "NetEase Mirrors"
@@ -756,7 +756,7 @@
       "id": "5ad7ffc79b5b",
       "category": "forums",
       "url": "http://www.gebi1.com/",
-      "icon": "assets/images/logos/wangyi.png",
+      "icon": "assets/images/logos/gebi.png",
       "name": {
         "zh": "隔壁网",
         "en": "Gebi"
@@ -770,7 +770,7 @@
       "id": "8424c31e2df2",
       "category": "graphics",
       "url": "http://www.58pic.com/",
-      "icon": "assets/images/logos/qiantu.png",
+      "icon": "assets/images/logos/58pic.png",
       "name": {
         "zh": "千图网",
         "en": "58pic"
@@ -784,7 +784,7 @@
       "id": "bcbfd4cbc0e0",
       "category": "graphics",
       "url": "http://588ku.com/",
-      "icon": "assets/images/logos/qianku.png",
+      "icon": "assets/images/logos/588ku.png",
       "name": {
         "zh": "千库网",
         "en": "588ku"
@@ -798,7 +798,7 @@
       "id": "cb50a8fce18f",
       "category": "graphics",
       "url": "http://www.ooopic.com/",
-      "icon": "assets/images/logos/wotu.png",
+      "icon": "assets/images/logos/ooopic.png",
       "name": {
         "zh": "我图网",
         "en": "OOOPIC"
@@ -854,7 +854,7 @@
       "id": "eac2e682d912",
       "category": "graphics",
       "url": "http://so.ui001.com/",
-      "icon": "assets/images/logos/sousucai.png",
+      "icon": "assets/images/logos/ui001-search.png",
       "name": {
         "zh": "素材搜索",
         "en": "Asset Search"
@@ -938,7 +938,7 @@
       "id": "3eee039a1046",
       "category": "graphics",
       "url": "http://www.uikit.me/",
-      "icon": "assets/images/logos/uikitme.png",
+      "icon": "assets/images/logos/uikit-me.png",
       "name": {
         "zh": "UIkit.me",
         "en": "UIkit.me"
@@ -966,7 +966,7 @@
       "id": "62466218957d",
       "category": "fonts",
       "url": "https://fonts.google.com/",
-      "icon": "assets/images/logos/googlefont.png",
+      "icon": "assets/images/logos/google-fonts.png",
       "name": {
         "zh": "Google Font",
         "en": "Google Fonts"
@@ -994,7 +994,7 @@
       "id": "8635247acd13",
       "category": "fonts",
       "url": "http://www.foundertype.com/",
-      "icon": "assets/images/logos/Fondertype.png",
+      "icon": "assets/images/logos/foundertype.png",
       "name": {
         "zh": "方正字库",
         "en": "FounderType"
@@ -1064,7 +1064,7 @@
       "id": "579f0f8fc86d",
       "category": "photos",
       "url": "https://stocksnap.io/",
-      "icon": "assets/images/logos/StockSnap.png",
+      "icon": "assets/images/logos/stocksnap.png",
       "name": {
         "zh": "StockSnap",
         "en": "StockSnap"
@@ -1190,7 +1190,7 @@
       "id": "c40547046c3a",
       "category": "learning",
       "url": "http://www.c945.com/web-ui-tutorial/",
-      "icon": "assets/images/logos/web_ui_tutorial.png",
+      "icon": "assets/images/logos/c945.png",
       "name": {
         "zh": "没位道",
         "en": "C945"

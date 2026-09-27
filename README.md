@@ -42,7 +42,7 @@ index.html           唯一页面入口
 
 - `src/data/catalog.json` 是唯一网址数据源，包含 76 条网址和 18 个分类。每个网址包含稳定 `id`、分类、URL、本地图标和 `zh` / `en` 名称、介绍。修改名称时保留 `id`，避免丢失已存收藏。
 - `src/i18n.ts` 管理界面文案；`src/styles.css` 管理主题、间距、圆角、响应式断点和动效。
-- `public/assets/images/` 存放品牌和网站图标；图标加载失败时显示默认图标。
+- `public/assets/images/` 存放品牌和网站图标；图标加载失败时显示默认图标。书签图标统一放在 `logos/`，按品牌或域名使用小写英文名称，多个词用短横线连接（如 `google-fonts.png`、`synology-photos.png`）。相同服务共用一份图标；重命名时同步更新 `catalog.json` 的 `icon` 引用。
 
 语言依据 `navigator.languages` 中第一个支持的语言选择：`zh-*` 使用中文，`en-*` 使用英文，其余回退英文。手动设置优先，并可切回“跟随系统”。切换语言时不跳转、不重载。
 
