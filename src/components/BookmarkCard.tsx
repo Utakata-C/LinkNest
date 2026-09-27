@@ -6,7 +6,7 @@ import { domain } from '../lib';
 
 export function SiteIcon({ site }: { site: Bookmark }) {
   const [failed, setFailed] = useState(false);
-  return <span className="site-icon">{failed ? <Globe size={24} /> : <img src={`${import.meta.env.BASE_URL}${site.icon}`} alt="" width="36" height="36" loading="lazy" onError={() => setFailed(true)} />}</span>;
+  return <span className="site-icon">{!site.icon || failed ? <Globe size={24} /> : <img src={`${import.meta.env.BASE_URL}${site.icon}`} alt="" width="36" height="36" loading="lazy" onError={() => setFailed(true)} />}</span>;
 }
 export function BookmarkCard({ site, locale, saved, onSave, t }: { site: Bookmark; locale: Locale; saved: boolean; onSave: (id: string) => void; t: Messages }) {
   return <article className={`bookmark-card ${saved ? 'is-saved' : ''}`}>

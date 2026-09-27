@@ -20,6 +20,12 @@ export function writePreference(key: string, value: unknown): boolean {
   try { localStorage.setItem(`linknest:${key}`, JSON.stringify(value)); return true; }
   catch { return false; }
 }
+export function readFavorites(bookmarks: readonly Pick<Bookmark, 'id'>[]): string[] {
+  const saved = readPreference<string[]>('favorites', [], (value): value is string[] =>
+    Array.isArray(value) && value.every(id => typeof id === 'string'));
+  const available = new Set(bookmarks.map(site => site.id));
+  return saved.filter(id => available.has(id));
+}
 export function matchesQuery(bookmark: Bookmark, query: string): boolean {
   const text = [bookmark.name.zh, bookmark.name.en, bookmark.description.zh, bookmark.description.en, bookmark.url].join(' ').toLocaleLowerCase();
   return query.trim().toLocaleLowerCase().split(/\s+/).every(term => text.includes(term));

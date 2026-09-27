@@ -40,9 +40,48 @@ index.html           唯一页面入口
 
 ## 维护网站与文案
 
-- `src/data/catalog.json` 是唯一网址数据源，包含 76 条网址和 18 个分类。每个网址包含稳定 `id`、分类、URL、本地图标和 `zh` / `en` 名称、介绍。修改名称时保留 `id`，避免丢失已存收藏。
+- `src/data/catalog.json` 是唯一网址数据源，包含 63 条网址和 15 个分类。每个网址包含稳定 `id`、分类、URL、本地图标（暂缺时为 `null`）和 `zh` / `en` 名称、介绍。修改名称时保留 `id`，避免丢失已存收藏。
 - `src/i18n.ts` 管理界面文案；`src/styles.css` 管理主题、间距、圆角、响应式断点和动效。
 - `public/assets/images/` 存放品牌和网站图标；图标加载失败时显示默认图标。书签图标统一放在 `logos/`，按品牌或域名使用小写英文名称，多个词用短横线连接（如 `google-fonts.png`、`synology-photos.png`）。相同服务共用一份图标；重命名时同步更新 `catalog.json` 的 `icon` 引用。
+
+### 分类结构
+
+| 分组 | 分类与书签数 |
+| --- | --- |
+| 日常浏览 | 搜索与 AI（4）、个人云（9）、科技与社区（5）、金融服务（2） |
+| 影音资源 | 视频与直播（3）、PT 与下载（3） |
+| 效率工具 | 图片处理（4）、账号与办公（3） |
+| 开发与网络 | 开发与运维（6）、域名与 DNS（4）、云主机与托管（4）、网络与连接（4） |
+| 灵感与设计 | 设计灵感（2）、字体资源（4）、图片与摄影（6） |
+
+“个人云”保留原分类、条目内容和排列顺序。其余条目按用途归类，多用途网站按主要用途放入一个分类，例如 Njalla 放入“域名与 DNS”，开源镜像站放入“开发与运维”。重分类保留所有书签 ID，不影响已存收藏。
+
+### 新增书签图标来源
+
+图标从对应站点公开的 favicon、Apple touch icon 或品牌图片下载，保存为本地文件，不依赖第三方图标代理。
+
+| 书签 | 本地文件（位于 `public/assets/images/logos/`） | 来源 |
+| --- | --- | --- |
+| App Store Connect | `app-store-connect.ico` | [官网 favicon](https://appstoreconnect.apple.com/favicon.ico) |
+| Apple 账号 | `apple-account.png` | [Apple 账号图标](https://appleid.cdn-apple.com/static/bin/cb3400246193/images/accountIcons/icon-192x192.png) |
+| GitHub | `github.png` | [官网 favicon](https://github.githubassets.com/favicons/favicon.png) |
+| 宝贝云 | `baobei-cloud.png` | [官网品牌图片](https://file.bbyvpn.com/d/img/frontico.png) |
+| 袋鼠VPN | `daishu-vpn.png` | [网站 touch icon](https://daishu.love/assets/logo.png) |
+| Hostinger | `hostinger.png` | [hPanel touch icon](https://hpanel.hostinger.com/favicons/hostinger-apple-touch-icon.png) |
+| Nextcli | `nextcli.png` | [官网 favicon](https://my.nextcli.com/templates/lagom2/assets/img/favicons/favicon-192.png) |
+| Gname | `gname.ico` | [官网 favicon](https://file-sg.gname.net/f/favicon.ico) |
+| 云悠 | `yunyoo.ico` | [官网 favicon](https://yunyoo.cc/favicon.ico) |
+| 汇丰 | `hsbc.png` | [官网 touch icon](https://www.hsbc.com.hk/etc.clientlibs/dpws/clientlibs-public/clientlib-site/resources/favicons/apple-touch-icon.png) |
+| 盈透 | `interactive-brokers.png` | [官网图标](https://www.interactivebrokers.com/images/web/favicons/home-screen-icon-192x192.png) |
+| 抖音 | `douyin.ico` | [官网 favicon](https://www.douyin.com/favicon.ico) |
+| 阿里云 | `aliyun.ico` | [官网声明的 favicon](https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico) |
+
+Njalla 的官方图标暂未取得（下载连接失败），目前 `icon` 为 `null`，直接显示默认地球图标。补充方式：
+
+1. 将图片放到 `public/assets/images/logos/njalla.png`，建议使用透明背景的正方形 PNG。
+2. 在 `src/data/catalog.json` 中找到 Njalla，将 `"icon": null` 改为 `"icon": "assets/images/logos/njalla.png"`。
+
+`daishu.love` 当前页面标题为“袋鼠小站”；书签沿用用户指定的“袋鼠VPN”名称和原网址。
 
 语言依据 `navigator.languages` 中第一个支持的语言选择：`zh-*` 使用中文，`en-*` 使用英文，其余回退英文。手动设置优先，并可切回“跟随系统”。切换语言时不跳转、不重载。
 
@@ -69,6 +108,6 @@ index.html           唯一页面入口
 
 ## 内容说明
 
-原有网址目的地全部保留，包括私人 NAS 端口地址与 HTTP 链接。原数据里“爱范儿”指向雷锋网，可在数据文件中单独校正。游戏娱乐和 Chrome 插件分类暂无条目，提供空状态。
+网址按个人使用需求持续增删；保留条目中包含私人 NAS 端口地址与 HTTP 链接。已清理空分类，按实际用途组织导航。移除书签后，其余本地收藏继续保留。
 
 原版基于 WebStack，站点与内容整理者为 Tangsu。

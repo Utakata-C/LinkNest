@@ -1,6 +1,6 @@
 export const messages = {
   zh: {
-    directory: '网址导航', home: '全部网站', favorites: '我的收藏', navigation: '探索分类', daily: '日常浏览', entertainment: '娱乐影音', tools: '软件工具', it: 'IT资源', design: '设计资源',
+    directory: '网址导航', home: '全部网站', favorites: '我的收藏', navigation: '探索分类', daily: '日常浏览', entertainment: '影音资源', tools: '效率工具', it: '开发与网络', design: '灵感与设计',
     about: '关于本站', greeting: '让每一次出发，都更简单。', intro: '常用的网站，喜欢的工具，偶然发现的灵感。都在这里。',
     search: '搜索网站、工具或灵感…', searchLabel: '搜索网站', searchHint: '试试搜索', clear: '清除搜索',
     curated: '个人收藏，持续整理', sites: '个网站', categories: '个分类',
@@ -15,7 +15,7 @@ export const messages = {
     aboutNote: '你也可以点击星标，整理自己的常用清单。语言与外观默认跟随系统，也可以随时在右上角调整。', back: '返回导航', blog: '糖酥的博客', original: '最初基于 WebStack', found: '找到',
   },
   en: {
-    directory: 'Personal directory', home: 'All websites', favorites: 'My favorites', navigation: 'Explore categories', daily: 'Everyday', entertainment: 'Entertainment', tools: 'Software & tools', it: 'IT resources', design: 'Design resources',
+    directory: 'Personal directory', home: 'All websites', favorites: 'My favorites', navigation: 'Explore categories', daily: 'Everyday', entertainment: 'Media & downloads', tools: 'Productivity', it: 'Development & network', design: 'Inspiration & design',
     about: 'About this site', greeting: 'A better place to start.', intro: 'Everyday websites, useful tools, and a little inspiration. All in one place.',
     search: 'Search websites, tools, or inspiration…', searchLabel: 'Search websites', searchHint: 'Try searching', clear: 'Clear search',
     curated: 'Personally collected. Always growing.', sites: 'websites', categories: 'categories',

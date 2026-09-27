@@ -1,28 +1,32 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  ArrowLeft, ArrowRight, ArrowUp, ArrowUpRight, Books, CaretDown, Cloud,
-  Code, Compass, DownloadSimple, FilmSlate, GameController, Globe, GridFour,
-  Heart, Info, List, MagnifyingGlass, Monitor, Moon, Palette, PuzzlePiece,
-  SlidersHorizontal, Sparkle, Star, Sun, Translate, Wrench, X,
+  ArrowLeft, ArrowRight, ArrowUp, ArrowUpRight, Bank, Books, CaretDown, Cloud,
+  Code, Compass, DownloadSimple, FilmSlate, Globe, GridFour,
+  Heart, Info, List, MagnifyingGlass, Monitor, Moon, Palette,
+  Sparkle, Star, Sun, Translate, Wrench, X,
 } from '@phosphor-icons/react';
 import catalog from './data/catalog.json';
 import type { Bookmark, Category, LanguagePreference, Locale, Theme } from './types';
 import { messages } from './i18n';
-import { decodeHash, matchesQuery, readPreference, resolveLocale, writePreference } from './lib';
+import { decodeHash, matchesQuery, readFavorites, readPreference, resolveLocale, writePreference } from './lib';
 import { BookmarkCard, SiteIcon } from './components/BookmarkCard';
 
 const Toast = lazy(() => import('./components/Toast'));
 const sites: Bookmark[] = catalog.links;
 const categories: Category[] = catalog.categories;
 const groups = ['daily', 'entertainment', 'tools', 'it', 'design'] as const;
-const categoryIcons = [MagnifyingGlass, Cloud, Globe, FilmSlate, GameController, DownloadSimple, Wrench, PuzzlePiece, Globe, Code, SlidersHorizontal, DownloadSimple, Globe, Palette, Books, Palette, Books, Books];
+const categoryIcons: Record<string, typeof Globe> = {
+  search: MagnifyingGlass, cloud: Cloud, community: Globe, finance: Bank,
+  video: FilmSlate, downloads: DownloadSimple, 'image-tools': Wrench,
+  office: Books, development: Code, domains: Globe, hosting: Cloud,
+  network: Compass, inspiration: Palette, fonts: Books, photos: Palette,
+};
 const getCategory = () => {
   const hash = decodeHash(location.hash);
   if (['favorites', 'about'].includes(hash)) return hash;
   return categories.find(item => item.anchor === hash)?.id ?? 'all';
 };
 const enumValue = <T extends string>(values: readonly T[]) => (value: unknown): value is T => typeof value === 'string' && values.includes(value as T);
-const arrayValue = (value: unknown): value is string[] => Array.isArray(value) && value.every(id => typeof id === 'string' && sites.some(site => site.id === id));
 
 export default function App() {
   const [language, setLanguage] = useState<LanguagePreference>(() => readPreference('language', 'auto', enumValue(['auto', 'zh', 'en'])));
@@ -32,7 +36,7 @@ export default function App() {
   const [theme, setTheme] = useState<Theme>(() => readPreference('theme', 'auto', enumValue(['auto', 'light', 'dark'])));
   const [systemDark, setSystemDark] = useState(() => matchMedia('(prefers-color-scheme: dark)').matches);
   const dark = theme === 'dark' || (theme === 'auto' && systemDark);
-  const [saved, setSaved] = useState<string[]>(() => readPreference('favorites', [], arrayValue));
+  const [saved, setSaved] = useState<string[]>(() => readFavorites(sites));
   const [view, setView] = useState<'grid' | 'list'>(() => readPreference('view', 'grid', enumValue(['grid', 'list'])));
   const [active, setActive] = useState(getCategory);
   const [query, setQuery] = useState('');
@@ -146,13 +150,13 @@ export default function App() {
     </>;
   }
   function navCategory(category: Category) {
-    const Icon = categoryIcons[categories.indexOf(category)];
+    const Icon = categoryIcons[category.id] ?? Globe;
     return <a href={`#${category.anchor}`} key={category.id} className={`nav-item ${active === category.id ? 'active' : ''}`} aria-current={active === category.id ? 'page' : undefined} onClick={event => { event.preventDefault(); navigate(category.id); }}><Icon size={18} /><span>{category.name[locale]}</span></a>;
   }
   function section(category: Category) {
     const bookmarks = filtered.filter(site => site.category === category.id);
     if (!bookmarks.length) return null;
-    const Icon = categoryIcons[categories.indexOf(category)];
+    const Icon = categoryIcons[category.id] ?? Globe;
     return <section className="bookmark-section" key={category.id} aria-labelledby={`heading-${category.id}`}>
       <div className="section-heading"><h2 id={`heading-${category.id}`}><Icon size={21} />{category.name[locale]}<span className="count">{bookmarks.length.toString().padStart(2, '0')}</span></h2>{active === 'all' && !query && <a className="category-action" href={`#${category.anchor}`} onClick={event => { event.preventDefault(); navigate(category.id); }} aria-label={`${t.visit}: ${category.name[locale]}`}><ArrowUpRight size={18} /></a>}</div>
       <div className={`bookmark-grid ${view === 'list' ? 'list-view' : ''}`}>{bookmarks.map(site => <BookmarkCard key={site.id} site={site} locale={locale} saved={saved.includes(site.id)} onSave={toggleFavorite} t={t} />)}</div>
@@ -180,7 +184,7 @@ export default function App() {
           </section>
           {!hasFilter && <section className="quick-section" aria-label={t.quick}><div className="quick-label"><Sparkle size={20} /><div><h2>{t.quick}</h2><p>{t.quickHint}</p></div></div><div className="quick-links">{quickSites.map(site => <a href={site.url} target="_blank" rel="noopener noreferrer" className="quick-link" key={site.id}><SiteIcon site={site} /><span>{site.name[locale]}</span><ArrowUpRight size={13} /></a>)}</div></section>}
           <div className="directory-toolbar"><div><h2>{query.trim() ? t.results : active === 'favorites' ? t.favorites : activeCategory?.name[locale] ?? t.browse}</h2><p aria-live="polite">{hasFilter ? `${t.found} ${filtered.length} ${t.sites}${query.trim() ? ` · ${t.resultsFor} “${query.trim()}”` : ''}` : t.browseHint}</p></div><div className="view-toggle" role="group" aria-label={t.settings}><button aria-label={t.grid} aria-pressed={view === 'grid'} onClick={() => { setView('grid'); persist('view', 'grid'); }}><GridFour size={18} /></button><button aria-label={t.list} aria-pressed={view === 'list'} onClick={() => { setView('list'); persist('view', 'list'); }}><List size={19} /></button></div></div>
-          <div className="filter-bar" aria-label={t.navigation}><button className={active === 'all' ? 'selected' : ''} aria-pressed={active === 'all'} onClick={() => navigate('all')}>{t.all}<span>{sites.length}</span></button>{categories.filter(category => ['search', 'cloud', 'news', 'online-tools', 'graphics', 'photos'].includes(category.id)).map(category => <button key={category.id} className={active === category.id ? 'selected' : ''} aria-pressed={active === category.id} onClick={() => navigate(category.id)}>{category.name[locale]}</button>)}</div>
+          <div className="filter-bar" aria-label={t.navigation}><button className={active === 'all' ? 'selected' : ''} aria-pressed={active === 'all'} onClick={() => navigate('all')}>{t.all}<span>{sites.length}</span></button>{categories.filter(category => ['search', 'cloud', 'community', 'image-tools', 'development', 'photos'].includes(category.id)).map(category => <button key={category.id} className={active === category.id ? 'selected' : ''} aria-pressed={active === category.id} onClick={() => navigate(category.id)}>{category.name[locale]}</button>)}</div>
           <div className="directory-content" key={`${active}-${view}`}>
             {filtered.length ? categories.map(section) : <div className="empty-state">{active === 'favorites' && !query ? <Star size={40} weight="duotone" /> : <MagnifyingGlass size={40} />}<h2>{query ? t.noResults : active === 'favorites' ? t.emptyFavorites : t.emptyCategory}</h2><p>{query ? t.noResultsHint : active === 'favorites' ? t.emptyFavoritesHint : t.emptyCategoryHint}</p><button className="primary-button" onClick={reset}>{t.reset}<ArrowRight size={17} /></button></div>}
           </div>
