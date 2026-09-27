@@ -1,0 +1,33 @@
+export const messages = {
+  zh: {
+    directory: '网址导航', home: '全部网站', favorites: '我的收藏', navigation: '探索分类', daily: '日常浏览', entertainment: '娱乐影音', tools: '软件工具', it: 'IT资源', design: '设计资源',
+    about: '关于本站', greeting: '让每一次出发，都更简单。', intro: '常用的网站，喜欢的工具，偶然发现的灵感。都在这里。',
+    search: '搜索网站、工具或灵感…', searchLabel: '搜索网站', searchHint: '试试搜索', clear: '清除搜索',
+    curated: '个人收藏，持续整理', sites: '个网站', categories: '个分类', favoriteCount: '个收藏',
+    quick: '快速访问', quickHint: '从熟悉的地方开始', all: '全部', browse: '探索你的互联网', browseHint: '按分类浏览，让好网站触手可及。',
+    results: '搜索结果', resultsFor: '正在搜索', noResults: '还没找到这个网站', noResultsHint: '换个关键词试试，也可以搜索网站域名或英文名称。', reset: '重置筛选',
+    emptyFavorites: '把喜欢的网站留在手边', emptyFavoritesHint: '点击网站旁的星标，创建你自己的常用清单。收藏只保存在当前浏览器。',
+    emptyCategory: '这个分类还在整理中', emptyCategoryHint: '先逛逛其他分类，好网站会慢慢多起来。',
+    addFavorite: '收藏', removeFavorite: '取消收藏', saved: '已加入收藏', removed: '已取消收藏', storageError: '浏览器暂时无法保存设置，本次使用仍然有效。',
+    grid: '网格视图', list: '列表视图', language: '语言', theme: '外观', auto: '跟随系统', light: '浅色', dark: '深色', menu: '打开分类导航', close: '关闭',
+    settings: '偏好设置', skip: '跳到主要内容', backTop: '回到顶部', visit: '访问网站', footer: '好网站，值得被收藏。', local: '收藏保存在此浏览器',
+    aboutTitle: '给常用的网站，一个家。', aboutBody: '有一段时间我发现我的收藏夹越来越多，很难找到某个不常用的网站。所以就有了这个网站，这里收集的基本都是我自己浏览器收藏夹里的网站，我平时用的相对比较多的一些都在这里。',
+    aboutNote: '你也可以点击星标，整理自己的常用清单。语言与外观默认跟随系统，也可以随时在右上角调整。', back: '返回导航', blog: '糖酥的博客', original: '最初基于 WebStack', found: '找到',
+  },
+  en: {
+    directory: 'Personal directory', home: 'All websites', favorites: 'My favorites', navigation: 'Explore categories', daily: 'Everyday', entertainment: 'Entertainment', tools: 'Software & tools', it: 'IT resources', design: 'Design resources',
+    about: 'About this site', greeting: 'A better place to start.', intro: 'Everyday websites, useful tools, and a little inspiration. All in one place.',
+    search: 'Search websites, tools, or inspiration…', searchLabel: 'Search websites', searchHint: 'Try searching', clear: 'Clear search',
+    curated: 'Personally collected. Always growing.', sites: 'websites', categories: 'categories', favoriteCount: 'favorites',
+    quick: 'Quick access', quickHint: 'Start somewhere familiar', all: 'All', browse: 'Explore your internet', browseHint: 'Good websites, thoughtfully organized.',
+    results: 'Search results', resultsFor: 'Searching for', noResults: 'Nothing here just yet', noResultsHint: 'Try another keyword, a domain, or the website’s other name.', reset: 'Reset filters',
+    emptyFavorites: 'Keep your favorites close', emptyFavoritesHint: 'Star a website to build your own collection. Favorites stay in this browser.',
+    emptyCategory: 'This collection is still growing', emptyCategoryHint: 'Explore another category while this one takes shape.',
+    addFavorite: 'Save', removeFavorite: 'Unsave', saved: 'Added to favorites', removed: 'Removed from favorites', storageError: 'Your browser could not save this preference. It will work for this session.',
+    grid: 'Grid view', list: 'List view', language: 'Language', theme: 'Appearance', auto: 'System', light: 'Light', dark: 'Dark', menu: 'Open category navigation', close: 'Close',
+    settings: 'Preferences', skip: 'Skip to content', backTop: 'Back to top', visit: 'Visit website', footer: 'Good websites are worth keeping.', local: 'Favorites stay in this browser',
+    aboutTitle: 'A home for your favorite places.', aboutBody: 'As my bookmarks grew, it became harder to find websites I only visited occasionally. So I made this directory. Most of these links come from my own bookmarks, including the sites I return to most often.',
+    aboutNote: 'Star websites to make your own collection. Language and appearance follow your system, and you can change them in the top-right corner.', back: 'Back to directory', blog: 'Tangsu’s blog', original: 'Originally based on WebStack', found: 'Found',
+  },
+} as const;
+export type Messages = typeof messages.zh | typeof messages.en;

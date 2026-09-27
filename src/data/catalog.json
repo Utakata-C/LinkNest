@@ -1,0 +1,1250 @@
+{
+  "categories": [
+    {
+      "id": "search",
+      "name": {
+        "zh": "搜索引擎",
+        "en": "Search engines"
+      },
+      "anchor": "搜索引擎",
+      "legacyAnchor": "搜索引擎",
+      "group": "daily"
+    },
+    {
+      "id": "cloud",
+      "name": {
+        "zh": "个人云",
+        "en": "Personal cloud"
+      },
+      "anchor": "个人云",
+      "legacyAnchor": "界面灵感",
+      "group": "daily"
+    },
+    {
+      "id": "news",
+      "name": {
+        "zh": "社区资讯",
+        "en": "Community & news"
+      },
+      "anchor": "社区资讯",
+      "legacyAnchor": "社区资讯",
+      "group": "daily"
+    },
+    {
+      "id": "video",
+      "name": {
+        "zh": "在线视频",
+        "en": "Online video"
+      },
+      "anchor": "在线视频",
+      "legacyAnchor": "在线视频",
+      "group": "entertainment"
+    },
+    {
+      "id": "gaming",
+      "name": {
+        "zh": "游戏娱乐",
+        "en": "Gaming"
+      },
+      "anchor": "游戏娱乐",
+      "legacyAnchor": "游戏娱乐",
+      "group": "entertainment"
+    },
+    {
+      "id": "downloads",
+      "name": {
+        "zh": "下载站点",
+        "en": "Downloads"
+      },
+      "anchor": "下载站点",
+      "legacyAnchor": "下载站点",
+      "group": "entertainment"
+    },
+    {
+      "id": "online-tools",
+      "name": {
+        "zh": "在线工具",
+        "en": "Online tools"
+      },
+      "anchor": "在线工具",
+      "legacyAnchor": "在线工具",
+      "group": "tools"
+    },
+    {
+      "id": "extensions",
+      "name": {
+        "zh": "Chrome插件",
+        "en": "Chrome extensions"
+      },
+      "anchor": "Chrome插件",
+      "legacyAnchor": "Chrome插件",
+      "group": "tools"
+    },
+    {
+      "id": "web-services",
+      "name": {
+        "zh": "Web服务",
+        "en": "Web services"
+      },
+      "anchor": "Web服务",
+      "legacyAnchor": "Web服务",
+      "group": "it"
+    },
+    {
+      "id": "web-tools",
+      "name": {
+        "zh": "Web工具",
+        "en": "Web tools"
+      },
+      "anchor": "Web工具",
+      "legacyAnchor": "Web工具",
+      "group": "it"
+    },
+    {
+      "id": "utilities",
+      "name": {
+        "zh": "常用工具",
+        "en": "Utilities"
+      },
+      "anchor": "常用工具",
+      "legacyAnchor": "常用工具",
+      "group": "it"
+    },
+    {
+      "id": "mirrors",
+      "name": {
+        "zh": "镜像源",
+        "en": "Software mirrors"
+      },
+      "anchor": "镜像源",
+      "legacyAnchor": "镜像源",
+      "group": "it"
+    },
+    {
+      "id": "forums",
+      "name": {
+        "zh": "交流论坛",
+        "en": "Forums"
+      },
+      "anchor": "交流论坛",
+      "legacyAnchor": "交流论坛",
+      "group": "it"
+    },
+    {
+      "id": "graphics",
+      "name": {
+        "zh": "平面素材",
+        "en": "Graphics"
+      },
+      "anchor": "平面素材",
+      "legacyAnchor": "平面素材",
+      "group": "design"
+    },
+    {
+      "id": "fonts",
+      "name": {
+        "zh": "字体资源",
+        "en": "Fonts"
+      },
+      "anchor": "字体资源",
+      "legacyAnchor": "字体资源",
+      "group": "design"
+    },
+    {
+      "id": "photos",
+      "name": {
+        "zh": "摄影图库",
+        "en": "Photography"
+      },
+      "anchor": "摄影图库",
+      "legacyAnchor": "摄影图库",
+      "group": "design"
+    },
+    {
+      "id": "slides",
+      "name": {
+        "zh": "PPT资源",
+        "en": "Presentations"
+      },
+      "anchor": "PPT资源",
+      "legacyAnchor": "PPT资源",
+      "group": "design"
+    },
+    {
+      "id": "learning",
+      "name": {
+        "zh": "学习交流",
+        "en": "Learning"
+      },
+      "anchor": "学习交流",
+      "legacyAnchor": "学习交流",
+      "group": "design"
+    }
+  ],
+  "links": [
+    {
+      "id": "79fe2148d3e0",
+      "category": "search",
+      "url": "https://www.google.com/",
+      "icon": "assets/images/logos/google.png",
+      "name": {
+        "zh": "Google",
+        "en": "Google"
+      },
+      "description": {
+        "zh": "全球最大的互联网搜索引擎",
+        "en": "Search the web for anything"
+      }
+    },
+    {
+      "id": "598fc74face2",
+      "category": "search",
+      "url": "https://www.baidu.com/",
+      "icon": "assets/images/logos/baidu.png",
+      "name": {
+        "zh": "百度",
+        "en": "Baidu"
+      },
+      "description": {
+        "zh": "国内最大的互联网搜索引擎",
+        "en": "Search the Chinese web"
+      }
+    },
+    {
+      "id": "c8acc24704ba",
+      "category": "search",
+      "url": "https://duckduckgo.com/",
+      "icon": "assets/images/logos/duckduckgo.png",
+      "name": {
+        "zh": "DuckDuckGo",
+        "en": "DuckDuckGo"
+      },
+      "description": {
+        "zh": "Web 和应用程序跟踪保护、智能加密、隐私搜索、电子邮件保护等",
+        "en": "Private search, without the tracking"
+      }
+    },
+    {
+      "id": "67316ee1d32f",
+      "category": "search",
+      "url": "https://gpt.tangsu.house/",
+      "icon": "assets/images/logos/chatgpt.png",
+      "name": {
+        "zh": "ChatGPT",
+        "en": "ChatGPT"
+      },
+      "description": {
+        "zh": "强大的AI语言模型，能够理解和生成自然语言，并运用算法为用户提供语言处理服务。",
+        "en": "Your AI assistant for ideas and answers"
+      }
+    },
+    {
+      "id": "4db613b2b781",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:1201/",
+      "icon": "assets/images/logos/synology.png",
+      "name": {
+        "zh": "糖酥Cloud",
+        "en": "Tangsu Cloud"
+      },
+      "description": {
+        "zh": "个人文件存储中心",
+        "en": "Your personal file storage"
+      }
+    },
+    {
+      "id": "5752f37719bb",
+      "category": "cloud",
+      "url": "https://tfdl.quickconnect.cn/",
+      "icon": "assets/images/logos/synology.png",
+      "name": {
+        "zh": "凯能Server",
+        "en": "Kaineng Server"
+      },
+      "description": {
+        "zh": "个人文件存储中心",
+        "en": "A personal file storage center"
+      }
+    },
+    {
+      "id": "3418503d80a8",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:1301/",
+      "icon": "assets/images/logos/synologyphotos.png",
+      "name": {
+        "zh": "Synology Photos",
+        "en": "Synology Photos"
+      },
+      "description": {
+        "zh": "提供智慧且彈性的相片管理方式，讓攝影愛好者及家庭用戶皆可輕鬆上手。",
+        "en": "Organize and rediscover your photos"
+      }
+    },
+    {
+      "id": "9f5bbb349e1e",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:1401/",
+      "icon": "assets/images/logos/activebackupforbusiness.png",
+      "name": {
+        "zh": "Active Backup for Business",
+        "en": "Active Backup for Business"
+      },
+      "description": {
+        "zh": "旨在提供全面性但集中化的資料保護儲存方案",
+        "en": "Centralized backup and data protection"
+      }
+    },
+    {
+      "id": "bcc4dd1b9a1a",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:6002/",
+      "icon": "assets/images/logos/halo.png",
+      "name": {
+        "zh": "糖酥的碎碎念",
+        "en": "Tangsu's Blog"
+      },
+      "description": {
+        "zh": "个人博客",
+        "en": "Personal stories and everyday thoughts"
+      }
+    },
+    {
+      "id": "760a533ad106",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:6006/",
+      "icon": "assets/images/logos/navidrome.png",
+      "name": {
+        "zh": "Navidrome",
+        "en": "Navidrome"
+      },
+      "description": {
+        "zh": "先进的个人音乐流媒体服务",
+        "en": "Your personal music streaming library"
+      }
+    },
+    {
+      "id": "52d488c4abfa",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:6008/",
+      "icon": "assets/images/logos/calibreweb.png",
+      "name": {
+        "zh": "CalibreWeb",
+        "en": "CalibreWeb"
+      },
+      "description": {
+        "zh": "最强大的本地电子书管理工具",
+        "en": "Browse and organize your ebook collection"
+      }
+    },
+    {
+      "id": "e88eac1a28c9",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:6033/",
+      "icon": "assets/images/logos/emby.png",
+      "name": {
+        "zh": "Emby",
+        "en": "Emby"
+      },
+      "description": {
+        "zh": "旨在助您管理您的家庭高清影音中心",
+        "en": "Your home for movies and television"
+      }
+    },
+    {
+      "id": "b38dac0cddf7",
+      "category": "cloud",
+      "url": "https://nas.tangsu.house:7010/",
+      "icon": "assets/images/logos/qinglong.png",
+      "name": {
+        "zh": "青龙",
+        "en": "Qinglong"
+      },
+      "description": {
+        "zh": "自动化脚本维护面板",
+        "en": "Manage and schedule automation scripts"
+      }
+    },
+    {
+      "id": "e6f23f44b1f6",
+      "category": "news",
+      "url": "https://www.leiphone.com/",
+      "icon": "assets/images/logos/leiphone.png",
+      "name": {
+        "zh": "雷锋网",
+        "en": "Leiphone"
+      },
+      "description": {
+        "zh": "人工智能和智能硬件领域的互联网科技媒体",
+        "en": "News on artificial intelligence and smart devices"
+      }
+    },
+    {
+      "id": "63d90a2525b1",
+      "category": "news",
+      "url": "https://www.leiphone.com/",
+      "icon": "assets/images/logos/ifanr.png",
+      "name": {
+        "zh": "爱范儿",
+        "en": "ifanr"
+      },
+      "description": {
+        "zh": "聚焦新创和消费主题的科技媒体",
+        "en": "Technology, startups, and consumer culture"
+      }
+    },
+    {
+      "id": "01f66bac32a5",
+      "category": "news",
+      "url": "http://36kr.com/",
+      "icon": "assets/images/logos/36kr.png",
+      "name": {
+        "zh": "36kr",
+        "en": "36kr"
+      },
+      "description": {
+        "zh": "创业资讯、科技新闻",
+        "en": "Startup stories and technology news"
+      }
+    },
+    {
+      "id": "6383be79a622",
+      "category": "news",
+      "url": "http://www.lieyunwang.com/",
+      "icon": "assets/images/logos/lieyunwang.png",
+      "name": {
+        "zh": "猎云网",
+        "en": "Lieyunwang"
+      },
+      "description": {
+        "zh": "互联网创业项目个人云和创业创新资讯",
+        "en": "Discover startups and new ideas"
+      }
+    },
+    {
+      "id": "7fe6a8459edd",
+      "category": "news",
+      "url": "http://www.iyunying.org/",
+      "icon": "assets/images/logos/iyunying.png",
+      "name": {
+        "zh": "爱运营",
+        "en": "iyunying"
+      },
+      "description": {
+        "zh": "网站运营人员学习交流，专注于网站产品运营管理、淘宝运营。",
+        "en": "Resources for product and website operations"
+      }
+    },
+    {
+      "id": "8682893446d0",
+      "category": "news",
+      "url": "https://sspai.com/",
+      "icon": "assets/images/logos/sspai.png",
+      "name": {
+        "zh": "少数派",
+        "en": "SSPAI"
+      },
+      "description": {
+        "zh": "高品质数字消费指南",
+        "en": "A guide to a better digital life"
+      }
+    },
+    {
+      "id": "63f8a414454a",
+      "category": "news",
+      "url": "http://liqi.io/",
+      "icon": "assets/images/logos/liqi.png",
+      "name": {
+        "zh": "利器",
+        "en": "Liqi"
+      },
+      "description": {
+        "zh": "创造者和他们的工具",
+        "en": "Creative people and the tools they use"
+      }
+    },
+    {
+      "id": "7e1ea7726301",
+      "category": "news",
+      "url": "https://faxian.appinn.com/",
+      "icon": "assets/images/logos/appinn.png",
+      "name": {
+        "zh": "小众软件",
+        "en": "Appinn"
+      },
+      "description": {
+        "zh": "在这里发现更多有趣的应用",
+        "en": "Discover useful and interesting apps"
+      }
+    },
+    {
+      "id": "5a57d375ec73",
+      "category": "video",
+      "url": "https://www.youtube.com/",
+      "icon": "assets/images/logos/youtube.png",
+      "name": {
+        "zh": "Youtube",
+        "en": "YouTube"
+      },
+      "description": {
+        "zh": "全球最大的学习分享平台",
+        "en": "Videos, ideas, and things to learn"
+      }
+    },
+    {
+      "id": "70a0376ff6df",
+      "category": "video",
+      "url": "https://www.bilibili.com/",
+      "icon": "assets/images/logos/bilibili.png",
+      "name": {
+        "zh": "哔哩哔哩",
+        "en": "Bilibili"
+      },
+      "description": {
+        "zh": "国内知名的视频弹幕网站",
+        "en": "Videos and a creative online community"
+      }
+    },
+    {
+      "id": "d2a4bf6a3aa1",
+      "category": "downloads",
+      "url": "https://u2.dmhy.org/",
+      "icon": "assets/images/logos/u2.png",
+      "name": {
+        "zh": "动漫花园",
+        "en": "DMHY"
+      },
+      "description": {
+        "zh": "动漫类资源PT下载站",
+        "en": "An anime resource sharing community"
+      }
+    },
+    {
+      "id": "335def957a1a",
+      "category": "downloads",
+      "url": "https://kp.m-team.cc/",
+      "icon": "assets/images/logos/m-team.png",
+      "name": {
+        "zh": "馒头",
+        "en": "M-Team"
+      },
+      "description": {
+        "zh": "综合类资源PT下载站",
+        "en": "A general resource sharing community"
+      }
+    },
+    {
+      "id": "078503f7886e",
+      "category": "downloads",
+      "url": "https://open.cd/",
+      "icon": "assets/images/logos/opencd.png",
+      "name": {
+        "zh": "皇后",
+        "en": "OpenCD"
+      },
+      "description": {
+        "zh": "音乐类资源PT下载站",
+        "en": "A music resource sharing community"
+      }
+    },
+    {
+      "id": "4a93912d1c77",
+      "category": "online-tools",
+      "url": "https://tinypng.com/",
+      "icon": "assets/images/logos/tinypng.png",
+      "name": {
+        "zh": "tinypng",
+        "en": "TinyPNG"
+      },
+      "description": {
+        "zh": "压缩图片大小，保留清晰细节",
+        "en": "Smaller images with less quality loss"
+      }
+    },
+    {
+      "id": "5c0fa0967747",
+      "category": "online-tools",
+      "url": "http://goqr.me/",
+      "icon": "assets/images/logos/goqr.png",
+      "name": {
+        "zh": "goqr",
+        "en": "goQR"
+      },
+      "description": {
+        "zh": "在线创建和下载二维码",
+        "en": "Create QR codes in your browser"
+      }
+    },
+    {
+      "id": "276986f44f12",
+      "category": "online-tools",
+      "url": "https://ezgif.com",
+      "icon": "assets/images/logos/ezgif.png",
+      "name": {
+        "zh": "ezgif",
+        "en": "Ezgif"
+      },
+      "description": {
+        "zh": "在线制作、裁剪和编辑 GIF 动图",
+        "en": "Create, resize, and edit animated GIFs"
+      }
+    },
+    {
+      "id": "ef3f8128f565",
+      "category": "online-tools",
+      "url": "https://jakearchibald.github.io/svgomg/",
+      "icon": "assets/images/logos/svgomg.png",
+      "name": {
+        "zh": "svgomg",
+        "en": "SVGOMG"
+      },
+      "description": {
+        "zh": "SVG在线压缩平台",
+        "en": "Optimize SVG files in your browser"
+      }
+    },
+    {
+      "id": "e893ec697ebb",
+      "category": "online-tools",
+      "url": "https://www.gaoding.com",
+      "icon": "assets/images/logos/gaoding.png",
+      "name": {
+        "zh": "稿定抠图",
+        "en": "Gaoding"
+      },
+      "description": {
+        "zh": "免费在线抠图软件,图片快速换背景-抠白底图",
+        "en": "Remove backgrounds and create designs"
+      }
+    },
+    {
+      "id": "cb86ddc75ca4",
+      "category": "online-tools",
+      "url": "https://www.iloveimg.com/zh-cn",
+      "icon": "assets/images/logos/iliveimg.png",
+      "name": {
+        "zh": "iLiveIMG",
+        "en": "iLoveIMG"
+      },
+      "description": {
+        "zh": "你可以轻松、快速地批量修改图片！你可以利用这些工具进行压缩、裁剪、格式转换，以及尺寸调整等。",
+        "en": "Compress, crop, resize, and convert images"
+      }
+    },
+    {
+      "id": "974c84f2032c",
+      "category": "web-services",
+      "url": "https://www.cloudflare.com/",
+      "icon": "assets/images/logos/cloudflare.png",
+      "name": {
+        "zh": "Cloudflare",
+        "en": "Cloudflare"
+      },
+      "description": {
+        "zh": "保护、优化、加速网站和应用程序",
+        "en": "Protect and accelerate your websites"
+      }
+    },
+    {
+      "id": "d543c794fe70",
+      "category": "web-services",
+      "url": "https://www.namecheap.com/",
+      "icon": "assets/images/logos/namecheap.png",
+      "name": {
+        "zh": "Namecheap",
+        "en": "Namecheap"
+      },
+      "description": {
+        "zh": "注册，托管和管理域名",
+        "en": "Register and manage domain names"
+      }
+    },
+    {
+      "id": "1798a8c642be",
+      "category": "web-services",
+      "url": "https://fanqiev2.work/auth/register?code=vepj",
+      "icon": "assets/images/logos/fanqiev2.png",
+      "name": {
+        "zh": "番茄V2",
+        "en": "Fanqie V2"
+      },
+      "description": {
+        "zh": "低价机场",
+        "en": "Network connectivity services"
+      }
+    },
+    {
+      "id": "8f20033fb303",
+      "category": "web-tools",
+      "url": "https://www.bt.cn/",
+      "icon": "assets/images/logos/baota.png",
+      "name": {
+        "zh": "宝塔",
+        "en": "BaoTa"
+      },
+      "description": {
+        "zh": "Linux/Windows服务器运维管理面板",
+        "en": "A management panel for your servers"
+      }
+    },
+    {
+      "id": "8a0573852b8b",
+      "category": "utilities",
+      "url": "https://www.speedtest.net/",
+      "icon": "assets/images/logos/speedtest.png",
+      "name": {
+        "zh": "SpeedTest",
+        "en": "Speedtest"
+      },
+      "description": {
+        "zh": "网页在线测速工具",
+        "en": "Test your internet connection speed"
+      }
+    },
+    {
+      "id": "2ffe215be8f1",
+      "category": "mirrors",
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/",
+      "icon": "assets/images/logos/tsinghua.png",
+      "name": {
+        "zh": "清华大学开源软件镜像站",
+        "en": "Tsinghua Mirrors"
+      },
+      "description": {
+        "zh": "致力于为国内和校内用户提供高质量的开源软件、系统镜像",
+        "en": "Open-source software and system mirrors"
+      }
+    },
+    {
+      "id": "6dbd47e32b34",
+      "category": "mirrors",
+      "url": "https://developer.aliyun.com/mirror/",
+      "icon": "assets/images/logos/aliyun.png",
+      "name": {
+        "zh": "阿里云开源软件镜像站",
+        "en": "Aliyun Mirrors"
+      },
+      "description": {
+        "zh": "国内优秀镜像站",
+        "en": "Open-source software download mirrors"
+      }
+    },
+    {
+      "id": "adbe249aa612",
+      "category": "mirrors",
+      "url": "https://mirrors.163.com/",
+      "icon": "assets/images/logos/wangyi.png",
+      "name": {
+        "zh": "网易开源镜像站",
+        "en": "NetEase Mirrors"
+      },
+      "description": {
+        "zh": "国内优秀镜像站",
+        "en": "Open-source software download mirrors"
+      }
+    },
+    {
+      "id": "db681bd9f85f",
+      "category": "forums",
+      "url": "https://www.v2ex.com/",
+      "icon": "assets/images/logos/v2ex.png",
+      "name": {
+        "zh": "V2EX",
+        "en": "V2EX"
+      },
+      "description": {
+        "zh": "V2EX 是一个关于分享和探索的地方",
+        "en": "A community for sharing and discovery"
+      }
+    },
+    {
+      "id": "612dca765963",
+      "category": "forums",
+      "url": "https://www.kejiwanjia.com/",
+      "icon": "assets/images/logos/kejiwanjia.png",
+      "name": {
+        "zh": "科技玩家",
+        "en": "Kejiwanjia"
+      },
+      "description": {
+        "zh": "专注科技领域，探索软硬件新玩法。",
+        "en": "Explore new ways to use technology"
+      }
+    },
+    {
+      "id": "5ad7ffc79b5b",
+      "category": "forums",
+      "url": "http://www.gebi1.com/",
+      "icon": "assets/images/logos/wangyi.png",
+      "name": {
+        "zh": "隔壁网",
+        "en": "Gebi"
+      },
+      "description": {
+        "zh": "打造国内NAS网络存储器最活跃的黑群晖论坛",
+        "en": "A community for NAS and storage enthusiasts"
+      }
+    },
+    {
+      "id": "8424c31e2df2",
+      "category": "graphics",
+      "url": "http://www.58pic.com/",
+      "icon": "assets/images/logos/qiantu.png",
+      "name": {
+        "zh": "千图网",
+        "en": "58pic"
+      },
+      "description": {
+        "zh": "专注免费设计素材下载的网站",
+        "en": "Graphics and design assets"
+      }
+    },
+    {
+      "id": "bcbfd4cbc0e0",
+      "category": "graphics",
+      "url": "http://588ku.com/",
+      "icon": "assets/images/logos/qianku.png",
+      "name": {
+        "zh": "千库网",
+        "en": "588ku"
+      },
+      "description": {
+        "zh": "免费png图片背景素材下载",
+        "en": "PNG images and background resources"
+      }
+    },
+    {
+      "id": "cb50a8fce18f",
+      "category": "graphics",
+      "url": "http://www.ooopic.com/",
+      "icon": "assets/images/logos/wotu.png",
+      "name": {
+        "zh": "我图网",
+        "en": "OOOPIC"
+      },
+      "description": {
+        "zh": "我图网,提供图片素材及模板下载,专注正版设计作品交易",
+        "en": "Licensed design assets and templates"
+      }
+    },
+    {
+      "id": "10a96b15b412",
+      "category": "graphics",
+      "url": "http://90sheji.com/",
+      "icon": "assets/images/logos/90sheji.png",
+      "name": {
+        "zh": "90设计",
+        "en": "90 Design"
+      },
+      "description": {
+        "zh": "电商设计（淘宝美工）千图免费淘宝素材库",
+        "en": "Design resources for online stores"
+      }
+    },
+    {
+      "id": "5f2e57660632",
+      "category": "graphics",
+      "url": "http://www.nipic.com/",
+      "icon": "assets/images/logos/nipic.png",
+      "name": {
+        "zh": "昵图网",
+        "en": "Nipic"
+      },
+      "description": {
+        "zh": "原创素材共享平台",
+        "en": "A community for original visual resources"
+      }
+    },
+    {
+      "id": "fd9f1c323117",
+      "category": "graphics",
+      "url": "http://www.lanrentuku.com/",
+      "icon": "assets/images/logos/lanrentuku.png",
+      "name": {
+        "zh": "懒人图库",
+        "en": "Lanrentuku"
+      },
+      "description": {
+        "zh": "懒人图库专注于提供网页素材下载",
+        "en": "Download assets for web design"
+      }
+    },
+    {
+      "id": "eac2e682d912",
+      "category": "graphics",
+      "url": "http://so.ui001.com/",
+      "icon": "assets/images/logos/sousucai.png",
+      "name": {
+        "zh": "素材搜索",
+        "en": "Asset Search"
+      },
+      "description": {
+        "zh": "设计素材搜索聚合",
+        "en": "Search across design resources"
+      }
+    },
+    {
+      "id": "d9736ef9e48f",
+      "category": "graphics",
+      "url": "http://psefan.com/",
+      "icon": "assets/images/logos/psefan.png",
+      "name": {
+        "zh": "PS饭团网",
+        "en": "PSEfan"
+      },
+      "description": {
+        "zh": "不一样的设计素材库！让自己的设计与众不同！",
+        "en": "A library of creative design resources"
+      }
+    },
+    {
+      "id": "2e07c9155813",
+      "category": "graphics",
+      "url": "http://www.sccnn.com/",
+      "icon": "assets/images/logos/sccnn.png",
+      "name": {
+        "zh": "素材中国",
+        "en": "SCCNN"
+      },
+      "description": {
+        "zh": "免费素材共享平台",
+        "en": "Free graphic design resources"
+      }
+    },
+    {
+      "id": "731b545d6495",
+      "category": "graphics",
+      "url": "http://huaban.com/",
+      "icon": "assets/images/logos/huaban.png",
+      "name": {
+        "zh": "花瓣",
+        "en": "Huaban"
+      },
+      "description": {
+        "zh": "收集灵感,保存有用的素材",
+        "en": "Collect inspiration and visual ideas"
+      }
+    },
+    {
+      "id": "153832f4d71c",
+      "category": "graphics",
+      "url": "https://www.pinterest.com/",
+      "icon": "assets/images/logos/pinterest.png",
+      "name": {
+        "zh": "Pinterest",
+        "en": "Pinterest"
+      },
+      "description": {
+        "zh": "全球美图收藏采集站",
+        "en": "Find and save visual inspiration"
+      }
+    },
+    {
+      "id": "9c570c3fb59c",
+      "category": "graphics",
+      "url": "https://www.yrucd.com/",
+      "icon": "assets/images/logos/yrucd.png",
+      "name": {
+        "zh": "云瑞",
+        "en": "YRUCD"
+      },
+      "description": {
+        "zh": "优秀设计资源的分享网站",
+        "en": "Discover useful design resources"
+      }
+    },
+    {
+      "id": "3eee039a1046",
+      "category": "graphics",
+      "url": "http://www.uikit.me/",
+      "icon": "assets/images/logos/uikitme.png",
+      "name": {
+        "zh": "UIkit.me",
+        "en": "UIkit.me"
+      },
+      "description": {
+        "zh": "最便捷新鲜的uikit资源下载网站",
+        "en": "User interface kits and design resources"
+      }
+    },
+    {
+      "id": "7af19e1f991d",
+      "category": "fonts",
+      "url": "https://www.ziticangku.com/",
+      "icon": "assets/images/logos/ziticangku.png",
+      "name": {
+        "zh": "字体仓库",
+        "en": "Font Library"
+      },
+      "description": {
+        "zh": "最全的免费商用字体库",
+        "en": "Find free commercial-use fonts"
+      }
+    },
+    {
+      "id": "62466218957d",
+      "category": "fonts",
+      "url": "https://fonts.google.com/",
+      "icon": "assets/images/logos/googlefont.png",
+      "name": {
+        "zh": "Google Font",
+        "en": "Google Fonts"
+      },
+      "description": {
+        "zh": "开放、免费的网页字体库",
+        "en": "Open-source fonts for the web"
+      }
+    },
+    {
+      "id": "bfdd0009a165",
+      "category": "fonts",
+      "url": "https://typekit.com/",
+      "icon": "assets/images/logos/typekit.png",
+      "name": {
+        "zh": "Typekit",
+        "en": "Typekit"
+      },
+      "description": {
+        "zh": "来自优秀字体设计工作室的字体",
+        "en": "Fonts from independent type foundries"
+      }
+    },
+    {
+      "id": "8635247acd13",
+      "category": "fonts",
+      "url": "http://www.foundertype.com/",
+      "icon": "assets/images/logos/Fondertype.png",
+      "name": {
+        "zh": "方正字库",
+        "en": "FounderType"
+      },
+      "description": {
+        "zh": "方正字库官方网站",
+        "en": "The official Founder font library"
+      }
+    },
+    {
+      "id": "66bb0dfdcd74",
+      "category": "fonts",
+      "url": "http://ziticq.com/",
+      "icon": "assets/images/logos/ziticq.png",
+      "name": {
+        "zh": "字体传奇网",
+        "en": "ZitiCQ"
+      },
+      "description": {
+        "zh": "中国首个字体品牌设计师交流网",
+        "en": "A community for type and brand designers"
+      }
+    },
+    {
+      "id": "abda7daa5ec8",
+      "category": "photos",
+      "url": "https://unsplash.com/",
+      "icon": "assets/images/logos/unsplash.png",
+      "name": {
+        "zh": "Unsplash",
+        "en": "Unsplash"
+      },
+      "description": {
+        "zh": "发现高质量的免费摄影作品",
+        "en": "Photography for your next idea"
+      }
+    },
+    {
+      "id": "5808414b8942",
+      "category": "photos",
+      "url": "https://visualhunt.com/",
+      "icon": "assets/images/logos/visualhunt.png",
+      "name": {
+        "zh": "visualhunt",
+        "en": "VisualHunt"
+      },
+      "description": {
+        "zh": "搜索免费的高品质照片",
+        "en": "Discover free, high-quality photographs"
+      }
+    },
+    {
+      "id": "4955d25b72a6",
+      "category": "photos",
+      "url": "https://pixabay.com/",
+      "icon": "assets/images/logos/pixabay.png",
+      "name": {
+        "zh": "pixabay",
+        "en": "Pixabay"
+      },
+      "description": {
+        "zh": "可在任何地方使用的免费图片和视频",
+        "en": "Images and videos for your projects"
+      }
+    },
+    {
+      "id": "579f0f8fc86d",
+      "category": "photos",
+      "url": "https://stocksnap.io/",
+      "icon": "assets/images/logos/StockSnap.png",
+      "name": {
+        "zh": "StockSnap",
+        "en": "StockSnap"
+      },
+      "description": {
+        "zh": "免费的高分辨率摄影图库",
+        "en": "A collection of free stock photography"
+      }
+    },
+    {
+      "id": "7d49712a4db7",
+      "category": "photos",
+      "url": "http://freenaturestock.com/",
+      "icon": "assets/images/logos/freenaturestock.png",
+      "name": {
+        "zh": "freenaturestock",
+        "en": "Free Nature Stock"
+      },
+      "description": {
+        "zh": "为创意项目寻找自然风光摄影",
+        "en": "Nature photography for creative projects"
+      }
+    },
+    {
+      "id": "5436b0cee064",
+      "category": "photos",
+      "url": "https://negativespace.co/",
+      "icon": "assets/images/logos/negativespace.png",
+      "name": {
+        "zh": "negativespace",
+        "en": "NegativeSpace"
+      },
+      "description": {
+        "zh": "免费的高分辨率图库",
+        "en": "Free, high-resolution stock photography"
+      }
+    },
+    {
+      "id": "f186a28c1766",
+      "category": "slides",
+      "url": "http://www.officeplus.cn/Template/Home.shtml",
+      "icon": "assets/images/logos/officeplus.png",
+      "name": {
+        "zh": "OfficePLUS",
+        "en": "OfficePLUS"
+      },
+      "description": {
+        "zh": "OfficePLUS，微软Office官方在线模板网站！",
+        "en": "Microsoft Office templates and resources"
+      }
+    },
+    {
+      "id": "f9df543311df",
+      "category": "slides",
+      "url": "http://www.ypppt.com/",
+      "icon": "assets/images/logos/ypppt.png",
+      "name": {
+        "zh": "优品PPT",
+        "en": "Youpin PPT"
+      },
+      "description": {
+        "zh": "高质量的模版，而且还有PPT图表，PPT背景图等资源",
+        "en": "Presentation templates, charts, and backgrounds"
+      }
+    },
+    {
+      "id": "a904261cf2b4",
+      "category": "slides",
+      "url": "http://www.pptplus.cn/",
+      "icon": "assets/images/logos/pptplus.png",
+      "name": {
+        "zh": "PPT+",
+        "en": "PPT+"
+      },
+      "description": {
+        "zh": "PPT加直播、录制和分享，PPT+语音内容分享平台",
+        "en": "Create and share narrated presentations"
+      }
+    },
+    {
+      "id": "91664d5a2663",
+      "category": "slides",
+      "url": "http://www.pptmind.com/",
+      "icon": "assets/images/logos/pptmind.png",
+      "name": {
+        "zh": "PPTMind",
+        "en": "PPTMind"
+      },
+      "description": {
+        "zh": "分享高端ppt模板与keynote模板的数字作品交易平台",
+        "en": "Premium PowerPoint and Keynote templates"
+      }
+    },
+    {
+      "id": "dc61526a4c11",
+      "category": "slides",
+      "url": "http://ppt.500d.me/",
+      "icon": "assets/images/logos/500d.png",
+      "name": {
+        "zh": "5百丁",
+        "en": "500D"
+      },
+      "description": {
+        "zh": "中国领先的PPT模板共享平台",
+        "en": "A presentation template sharing platform"
+      }
+    },
+    {
+      "id": "e9f28bf27ded",
+      "category": "learning",
+      "url": "http://doyoudo.com/",
+      "icon": "assets/images/logos/doyoudo.png",
+      "name": {
+        "zh": "doyoudo",
+        "en": "doyoudo"
+      },
+      "description": {
+        "zh": "创意设计软件学习平台",
+        "en": "Learn creative and design software"
+      }
+    },
+    {
+      "id": "c40547046c3a",
+      "category": "learning",
+      "url": "http://www.c945.com/web-ui-tutorial/",
+      "icon": "assets/images/logos/web_ui_tutorial.png",
+      "name": {
+        "zh": "没位道",
+        "en": "C945"
+      },
+      "description": {
+        "zh": "WEB UI免费视频公开课",
+        "en": "Free web and interface design tutorials"
+      }
+    },
+    {
+      "id": "d643b4e12b36",
+      "category": "learning",
+      "url": "https://www.imooc.com/",
+      "icon": "assets/images/logos/imooc.png",
+      "name": {
+        "zh": "慕课网",
+        "en": "imooc"
+      },
+      "description": {
+        "zh": "程序员的梦工厂（有UI课程）",
+        "en": "Programming and interface design courses"
+      }
+    },
+    {
+      "id": "2a37a9581d2a",
+      "category": "learning",
+      "url": "http://www.uisdc.com/",
+      "icon": "assets/images/logos/uisdc.png",
+      "name": {
+        "zh": "优设网",
+        "en": "UISDC"
+      },
+      "description": {
+        "zh": "设计师交流学习平台",
+        "en": "A community for designers to learn and share"
+      }
+    }
+  ]
+}
