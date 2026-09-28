@@ -390,6 +390,34 @@
       }
     },
     {
+      "id": "9e49cf494355",
+      "category": "community",
+      "url": "https://www.apple.com/",
+      "icon": "assets/images/logos/apple.ico",
+      "name": {
+        "zh": "Apple 官网",
+        "en": "Apple"
+      },
+      "description": {
+        "zh": "了解 Apple 产品、服务与官方技术支持。",
+        "en": "Explore Apple products, services, and official support."
+      }
+    },
+    {
+      "id": "2f93d8b264c2",
+      "category": "community",
+      "url": "https://hk.yahoo.com/",
+      "icon": "assets/images/logos/yahoo-hk.png",
+      "name": {
+        "zh": "Yahoo 香港",
+        "en": "Yahoo Hong Kong"
+      },
+      "description": {
+        "zh": "浏览香港新闻、财经、天气与生活资讯。",
+        "en": "Browse Hong Kong news, finance, weather, and lifestyle updates."
+      }
+    },
+    {
       "id": "79bf54c4fd7a",
       "category": "finance",
       "url": "https://www.hsbc.com.hk/zh-cn/",
@@ -415,6 +443,20 @@
       "description": {
         "zh": "盈透证券全球市场交易与账户管理平台。",
         "en": "Interactive Brokers global market trading and account management."
+      }
+    },
+    {
+      "id": "c4534fcf4edb",
+      "category": "finance",
+      "url": "https://www.kraken.com/",
+      "icon": "assets/images/logos/kraken.png",
+      "name": {
+        "zh": "Kraken",
+        "en": "Kraken"
+      },
+      "description": {
+        "zh": "加密资产交易与账户管理平台。",
+        "en": "A platform for trading crypto assets and managing your account."
       }
     },
     {
@@ -600,6 +642,48 @@
       }
     },
     {
+      "id": "4c74fc8259ae",
+      "category": "office",
+      "url": "https://www.icloud.com/",
+      "icon": "assets/images/logos/icloud.png",
+      "name": {
+        "zh": "iCloud",
+        "en": "iCloud"
+      },
+      "description": {
+        "zh": "在网页访问照片、邮件、云盘、备忘录与日历。",
+        "en": "Access photos, mail, iCloud Drive, notes, and calendars online."
+      }
+    },
+    {
+      "id": "d4d78c009a81",
+      "category": "office",
+      "url": "https://proton.me/",
+      "icon": "assets/images/logos/proton.png",
+      "name": {
+        "zh": "Proton",
+        "en": "Proton"
+      },
+      "description": {
+        "zh": "注重隐私的邮箱、云盘、密码管理与协作服务。",
+        "en": "Privacy-focused email, cloud storage, passwords, and collaboration."
+      }
+    },
+    {
+      "id": "af149885eb1f",
+      "category": "office",
+      "url": "https://talangya.com/",
+      "icon": "assets/images/logos/talangya.png",
+      "name": {
+        "zh": "踏浪鸭",
+        "en": "Talangya"
+      },
+      "description": {
+        "zh": "邮箱与账号商品浏览、订单查询入口。",
+        "en": "Browse email and account products and look up orders."
+      }
+    },
+    {
       "id": "09a8b930c8b7",
       "category": "development",
       "url": "https://github.com/",
@@ -681,6 +765,20 @@
       "description": {
         "zh": "国内优秀镜像站",
         "en": "Open-source software download mirrors"
+      }
+    },
+    {
+      "id": "2169a56dc374",
+      "category": "development",
+      "url": "https://next.itellyou.cn/",
+      "icon": "assets/images/logos/itellyou.ico",
+      "name": {
+        "zh": "NEXT, ITELLYOU",
+        "en": "NEXT, ITELLYOU"
+      },
+      "description": {
+        "zh": "查找操作系统与软件原版镜像及下载信息。",
+        "en": "Find original operating system and software images and download details."
       }
     },
     {
@@ -793,6 +891,48 @@
       "description": {
         "zh": "云服务器与网络服务。",
         "en": "Cloud servers and network services."
+      }
+    },
+    {
+      "id": "7891c188d9b2",
+      "category": "hosting",
+      "url": "https://www.conoha.jp/",
+      "icon": "assets/images/logos/conoha.png",
+      "name": {
+        "zh": "ConoHa",
+        "en": "ConoHa"
+      },
+      "description": {
+        "zh": "网站托管、VPS 与云服务。",
+        "en": "Website hosting, VPS, and cloud services."
+      }
+    },
+    {
+      "id": "f22b20859910",
+      "category": "hosting",
+      "url": "https://bandwagonhost.com/",
+      "icon": null,
+      "name": {
+        "zh": "搬瓦工",
+        "en": "BandwagonHost"
+      },
+      "description": {
+        "zh": "BandwagonHost VPS 云服务器服务。",
+        "en": "VPS hosting services from BandwagonHost."
+      }
+    },
+    {
+      "id": "9f5d4e1f8223",
+      "category": "hosting",
+      "url": "https://www.racknerd.com/",
+      "icon": "assets/images/logos/racknerd.png",
+      "name": {
+        "zh": "RackNerd",
+        "en": "RackNerd"
+      },
+      "description": {
+        "zh": "VPS、独立服务器与网站托管服务。",
+        "en": "VPS, dedicated servers, and website hosting services."
       }
     },
     {

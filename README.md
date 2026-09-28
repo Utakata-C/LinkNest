@@ -40,7 +40,7 @@ index.html           唯一页面入口
 
 ## 维护网站与文案
 
-- `src/data/catalog.json` 是唯一网址数据源，包含 63 条网址和 15 个分类。每个网址包含稳定 `id`、分类、URL、本地图标（暂缺时为 `null`）和 `zh` / `en` 名称、介绍。修改名称时保留 `id`，避免丢失已存收藏。
+- `src/data/catalog.json` 是唯一网址数据源，包含 73 条网址和 15 个分类。每个网址包含稳定 `id`、分类、URL、本地图标（暂缺时为 `null`）和 `zh` / `en` 名称、介绍。修改名称时保留 `id`，避免丢失已存收藏。
 - `src/i18n.ts` 管理界面文案；`src/styles.css` 管理主题、间距、圆角、响应式断点和动效。
 - `public/assets/images/` 存放品牌和网站图标；图标加载失败时显示默认图标。书签图标统一放在 `logos/`，按品牌或域名使用小写英文名称，多个词用短横线连接（如 `google-fonts.png`、`synology-photos.png`）。相同服务共用一份图标；重命名时同步更新 `catalog.json` 的 `icon` 引用。
 
@@ -48,10 +48,10 @@ index.html           唯一页面入口
 
 | 分组 | 分类与书签数 |
 | --- | --- |
-| 日常浏览 | 搜索与 AI（4）、个人云（9）、科技与社区（5）、金融服务（2） |
+| 日常浏览 | 搜索与 AI（4）、个人云（9）、科技与社区（7）、金融服务（3） |
 | 影音资源 | 视频与直播（3）、PT 与下载（3） |
-| 效率工具 | 图片处理（4）、账号与办公（3） |
-| 开发与网络 | 开发与运维（6）、域名与 DNS（4）、云主机与托管（4）、网络与连接（4） |
+| 效率工具 | 图片处理（4）、账号与办公（6） |
+| 开发与网络 | 开发与运维（7）、域名与 DNS（4）、云主机与托管（7）、网络与连接（4） |
 | 灵感与设计 | 设计灵感（2）、字体资源（4）、图片与摄影（6） |
 
 “个人云”保留原分类、条目内容和排列顺序。其余条目按用途归类，多用途网站按主要用途放入一个分类，例如 Njalla 放入“域名与 DNS”，开源镜像站放入“开发与运维”。重分类保留所有书签 ID，不影响已存收藏。
@@ -75,11 +75,25 @@ index.html           唯一页面入口
 | 盈透 | `interactive-brokers.png` | [官网图标](https://www.interactivebrokers.com/images/web/favicons/home-screen-icon-192x192.png) |
 | 抖音 | `douyin.ico` | [官网 favicon](https://www.douyin.com/favicon.ico) |
 | 阿里云 | `aliyun.ico` | [官网声明的 favicon](https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico) |
+| Apple 官网 | `apple.ico` | [官网 favicon](https://www.apple.com/favicon.ico) |
+| iCloud | `icloud.png` | [官网 touch icon](https://www.icloud.com/system/icloud.com/2634Build50/favicons/default-favicon-light-180x180.png) |
+| Yahoo 香港 | `yahoo-hk.png` | [官网 touch icon](https://s.yimg.com/cv/apiv2/twapp/apple-touch-icon@167x167.png) |
+| Proton | `proton.png` | [官网 touch icon](https://proton.me/favicons/apple-touch-icon.png) |
+| 踏浪鸭 | `talangya.png` | [官网品牌图片](https://talangya.com/app/View/User/Theme/FatChicken/logo.png) |
+| ConoHa | `conoha.png` | [官网 favicon](https://www.conoha.jp/wing_59681/common/images/favicon.png) |
+| Kraken | `kraken.png` | [官网 touch icon](https://www.kraken.com/_assets/icons/apple-touch-icon.png) |
+| NEXT, ITELLYOU | `itellyou.ico` | [官网 favicon](https://next.itellyou.cn/favicon.ico) |
+| RackNerd | `racknerd.png` | [官网 favicon](https://www.racknerd.com/favicon.png) |
 
 Njalla 的官方图标暂未取得（下载连接失败），目前 `icon` 为 `null`，直接显示默认地球图标。补充方式：
 
 1. 将图片放到 `public/assets/images/logos/njalla.png`，建议使用透明背景的正方形 PNG。
 2. 在 `src/data/catalog.json` 中找到 Njalla，将 `"icon": null` 改为 `"icon": "assets/images/logos/njalla.png"`。
+
+搬瓦工官网的 favicon 返回 404，目前仅找到 [814 × 100 的横版文字 Logo](https://bandwagonhost.com/templates/organicbandwagon/images/logo4.png)，缩小到书签图标尺寸后难以辨认，因此暂用默认地球图标。补充方式：
+
+1. 将合适的正方形 PNG 放到 `public/assets/images/logos/bandwagonhost.png`。
+2. 在 `src/data/catalog.json` 中找到搬瓦工，将 `"icon": null` 改为 `"icon": "assets/images/logos/bandwagonhost.png"`。
 
 `daishu.love` 当前页面标题为“袋鼠小站”；书签沿用用户指定的“袋鼠VPN”名称和原网址。
 

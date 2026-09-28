@@ -4,10 +4,10 @@ import catalog from '../src/data/catalog.json';
 import { decodeHash, matchesQuery, readFavorites, resolveLocale } from '../src/lib';
 
 describe('catalog', () => {
-  it('contains 63 entries and 15 categories with complete translations', () => {
-    expect(catalog.links).toHaveLength(63);
+  it('contains 73 entries and 15 categories with complete translations', () => {
+    expect(catalog.links).toHaveLength(73);
     expect(catalog.categories).toHaveLength(15);
-    expect(new Set(catalog.links.map(site => site.id)).size).toBe(63);
+    expect(new Set(catalog.links.map(site => site.id)).size).toBe(73);
     for (const site of catalog.links) {
       expect(catalog.categories.some(category => category.id === site.category)).toBe(true);
       expect(['http:', 'https:']).toContain(new URL(site.url).protocol);
