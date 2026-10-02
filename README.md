@@ -1,4 +1,4 @@
-# LinkNest / Tangsu.house
+# LinkNest / tangsu.me
 
 个人网址导航，使用 React、TypeScript 和 Vite 构建。中英文共用同一个页面，支持自动语言、深浅主题、搜索和本地收藏。
 
@@ -114,11 +114,13 @@ Njalla 的官方图标暂未取得（下载连接失败），目前 `icon` 为 `
 
 ## 发布
 
+当前部署目标为 YUNYOO-JP 上的 **https://nest.tangsu.me/**，使用 Caddy 托管纯静态文件并自动管理 HTTPS。详见 [服务器部署说明](deploy/README.md)。
+
 运行 `npm run build` 后发布纯静态 `dist/`，不要直接发布源代码目录。
 
 `.github/workflows/deploy.yml` 在 `main` 推送后测试、构建并发布 GitHub Pages。仓库 Settings → Pages 的 Source 需要设为 **GitHub Actions**，也可以手动触发工作流。
 
-`public/CNAME` 是域名配置的唯一来源，当前为 `tangsu.house`。如更换域名，同时更新此文件、`index.html` 中的 Open Graph URL、`public/robots.txt` 和 `public/sitemap.xml`。Vite 使用相对构建路径，默认部署目标是自定义域名根目录。`public/404.html` 是发布用的错误页面。
+`public/CNAME` 记录发布域名（供 GitHub Pages 使用）；VPS 实际域名由 DNS 和 `deploy/Caddyfile` 配置，当前为 `nest.tangsu.me`。如更换域名，同时更新此文件、`deploy/Caddyfile`、`index.html` 中的 Open Graph URL / canonical、`public/robots.txt` 和 `public/sitemap.xml`。Vite 使用相对构建路径，默认部署目标是自定义域名根目录。`public/404.html` 是发布用的错误页面。
 
 ## 内容说明
 

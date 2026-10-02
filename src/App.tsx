@@ -75,7 +75,7 @@ export default function App() {
   }, [dark]);
   useEffect(() => {
     document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en';
-    document.title = `Tangsu.house - ${isAbout ? t.about : t.directory}`;
+    document.title = `tangsu.me - ${isAbout ? t.about : t.directory}`;
     document.querySelector('meta[name="description"]')?.setAttribute('content', t.intro);
   }, [locale, t, isAbout]);
   useEffect(() => {
@@ -131,7 +131,10 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
   }
   function reset() { navigate('all'); searchRef.current?.focus(); }
-  const brand = <a href="#" className="brand" aria-label="Tangsu.house" onClick={event => { event.preventDefault(); navigate('all'); }}><img src={`${import.meta.env.BASE_URL}assets/images/${dark ? 'logo@2x.png' : 'logo_dark@2x.png'}`} width="180" height="40" alt="Tangsu.house" /></a>;
+  const brand = <a href="#" className="brand" aria-label="tangsu.me" onClick={event => { event.preventDefault(); navigate('all'); }}>
+    <img className="brand-mark" src={dark ? '/assets/images/brand/tangsu-swirl-dark-128.png' : '/assets/images/brand/tangsu-swirl-128.png'} alt="" width="40" height="40" />
+    <span className="brand-copy"><span className="brand-name">tangsu.me</span><span className="brand-caption">{t.directory}</span></span>
+  </a>;
   function navigation(mobile = false) {
     return <>
       <div className="sidebar-brand">{brand}{mobile && <button className="icon-button" aria-label={t.close} onClick={() => setMobileMenu(false)}><X size={20} /></button>}</div>
