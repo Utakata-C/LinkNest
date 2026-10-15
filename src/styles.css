@@ -168,11 +168,12 @@ kbd { border: 1px solid var(--border); background: var(--background); border-rad
 .about-mark { width: 76px; height: 76px; display: grid; place-items: center; border-radius: 20px; background: var(--accent-soft); color: var(--accent); margin: 70px 0 24px; }
 .about-page > p { line-height: 2; font-size: 15px; color: var(--secondary); margin-bottom: 22px; }
 .about-page .primary-button { margin-top: 18px; }
-.footer { border-top: 1px solid var(--border); margin-top: 44px; padding: 24px 0 26px; display: flex; align-items: center; justify-content: space-between; gap: 15px; color: var(--muted); font-size: 10px; }
+.footer { border-top: 1px solid var(--border); margin-top: 44px; padding: 24px 0 26px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 15px; color: var(--muted); font-size: 10px; }
 .footer p { margin: 0; }
 .footer p > a { color: var(--text); margin-left: 4px; }
 .footer p span { margin-left: 18px; }
 .footer > div { display: flex; gap: 18px; align-items: center; }
+.footer > .footer-meta { flex-direction: column; align-items: flex-start; gap: 8px; }
 .footer a:hover { color: var(--accent); }
 .toast { position: fixed; bottom: 28px; left: calc(50% + var(--sidebar-width) / 2); translate: -50% 0; display: flex; align-items: center; gap: 9px; padding: 13px 19px; max-width: calc(100% - 32px); width: max-content; font-size: 13px; background: var(--surface); border: 1px solid var(--accent-border); box-shadow: var(--shadow); border-radius: 10px; z-index: 40; color: var(--accent); }
 .mobile-drawer { display: none; }

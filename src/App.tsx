@@ -192,7 +192,13 @@ export default function App() {
             {filtered.length ? categories.map(section) : <div className="empty-state">{active === 'favorites' && !query ? <Star size={40} weight="duotone" /> : <MagnifyingGlass size={40} />}<h2>{query ? t.noResults : active === 'favorites' ? t.emptyFavorites : t.emptyCategory}</h2><p>{query ? t.noResultsHint : active === 'favorites' ? t.emptyFavoritesHint : t.emptyCategoryHint}</p><button className="primary-button" onClick={reset}>{t.reset}<ArrowRight size={17} /></button></div>}
           </div>
         </>}
-        <footer className="footer"><p>© {new Date().getFullYear()} <a href="https://blog.tangsu.house" target="_blank" rel="noopener noreferrer">Tangsu</a><span>{t.footer}</span></p><div><a href="#about" onClick={event => { event.preventDefault(); navigate('about'); }}>{t.original}</a><button className="icon-button" aria-label={t.backTop} onClick={() => window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' })}><ArrowUp size={17} /></button></div></footer>
+        <footer className="footer">
+          <div className="footer-meta">
+            <p>© {new Date().getFullYear()} <a href="https://blog.tangsu.house" target="_blank" rel="noopener noreferrer">Tangsu</a><span>{t.footer}</span></p>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" lang="zh-CN">闽ICP备2026040028号</a>
+          </div>
+          <div><a href="#about" onClick={event => { event.preventDefault(); navigate('about'); }}>{t.original}</a><button className="icon-button" aria-label={t.backTop} onClick={() => window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' })}><ArrowUp size={17} /></button></div>
+        </footer>
       </main>
     </div>
     <Suspense fallback={notice ? <div className="toast" role="status">{notice}</div> : null}>{notice && <Toast notice={notice} />}</Suspense>
